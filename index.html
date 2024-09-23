@@ -55,19 +55,37 @@
     </header>
    <main class="px-8 mt-5">
     <section>
+        <!-- card-1 -->
        <div class="lg:flex items-center space-x-6 p-6 bg-[#1111111A] rounded-2xl border-[1px] border-[ rgba(17, 17, 17, 0.1);]">
         <div>
             <img src="./images/noakhali.png" alt="">
         </div>
         <div class="lg:w-1/2 space-y-3">
-            <button class="flex btn"> <img src="./images/coin.png" alt=""> <span>0</span> BDT</button>
+            <button class="flex btn"> <img src="./images/coin.png" alt=""> <span id="money-btn">0</span> BDT</button>
             <h2 class="text-xl font-bold text-[#111111]">Donate for Flood at Noakhali, Bangladesh</h2>
             <p class="text-[#111111B3]">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide
             essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please
             join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
             <div>
-                <input class="w-full py-2 px-5 rounded-lg mt-4 mb-2" type="text" placeholder="Write Donation Amount">
-                <button class="bg-primary btn w-full text-xl font-semibold">Donate Now</button>
+                <input id="donate-input" class="w-full py-2 px-5 rounded-lg mt-4 mb-2" type="text" placeholder="Write Donation Amount">
+                <button class=" "></button>
+                <!-- Open the modal using ID.showModal() method -->
+                 <!-- modal -->
+                <button id="donate-btn" class="btn bg-primary w-full text-xl font-semibold">Donate
+                    Now</button>
+                <!-- <button id="donate-btn" class="btn bg-primary w-full text-xl font-semibold" onclick="my_modal_5.showModal()">Donate Now</button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                    <h3 class="text-lg font-bold">Hello!</h3>
+                    <p class="py-4">Press ESC key or click the button below to close</p>
+                    <div class="modal-action">
+                        <form method="dialog">
+                           
+                            <button class="btn">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog> -->
             </div>
         </div>
        </div>
@@ -75,5 +93,8 @@
     <!--  -->
     
    </main>
+
+   <script src="./js/utilities.js"></script>
+   <script src="./js/donation.js"></script>
 </body>
 </html>
