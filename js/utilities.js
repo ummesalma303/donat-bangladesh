@@ -13,6 +13,7 @@ function showSection(id) {
      const donateInput = getValidInput('donate-input');
     if (!donateInput || isNaN(donateInput) || donateInput < 0) {
         alert('invalid input');
+     document.getElementById('history-btn').classList.remove('bg-primary')
         return
     }
     document.getElementById('donate-section').classList.add('hidden');
