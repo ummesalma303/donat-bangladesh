@@ -17,7 +17,7 @@
             theme: {
                 extend: {
                     colors: {
-                        primaryColor: '#B4F461',
+                        primary: '#B4F461',
                     },
                     fontFamily: {
                         font:"Lexend"
@@ -28,6 +28,30 @@
     </script>
 </head>
 <body class="font">
-    <h2>lk</h2>
+    <header class="bg-slate-400 h-screen">
+        <nav class="flex justify-between sticky top-0 bg-[rgb(249, 247, 243)] px-8 py-4">
+            <button class="btn bg-primary px-8 text-xl font-semibold">Blog</button>
+            <div class="flex items-center space-x-3">
+                <div>
+                <img src="./images/logo.png" alt="">
+                </div>
+                <div>
+                <h2 class="text-xl font-semibold">Donate Bangladesh</h2>
+                </div>
+            </div>
+            <div class="flex items-center space-x-2">
+                <div>
+                    <img src="./images/coin.png" alt="">
+                </div>
+                <div>
+                    <h2 class="text-xl font-medium"><span>5500</span> BDT</h2>
+                </div>
+            </div>
+        </nav>
+        <div class="flex justify-center space-x-3 backdrop-blur-md bg-white/30 pt-9 pb-5 border-b-[1px]">
+            <button class="btn bg-primary px-8 text-xl font-semibold">Blog</button>
+            <button class="btn px-8 text-xl font-semibold">Blog</button>
+        </div>
+    </header>
 </body>
 </html>

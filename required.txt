@@ -1,0 +1,58 @@
+Key Rule
+1.Do not ask about mark distribution in the group, as it will not be provided.
+2.Do not post assignment feedback after receiving it. If you encounter issues or have complaints, please join a support session for discussion.
+3.Avoid using "lorem ipsum" text. Use relevant and meaningful content instead.
+4.Feel free to modify the color or design, but ensure the design is visually appealing and professional.
+5.You are not allowed to use any JavaScript library or framework for this assignment.
+
+Design
+1.Navbar: Create a visually appealing navbar with the following structure:
+2.Logo positioned in the middle.
+3."Blog" button on the left.
+4.Account balance with a coin icon on the right.
+5."Donation" and "History" buttons in the center (as per Figma).
+6.Donation Cards: Create 3 donation cards with the following details:
+7.Image on the left.
+8.Donation title.
+9.Donation info.
+10.Current donation amount.
+11.Input field for donation amount.
+12.Button for submitting the donation.
+13.History Section: Initially hidden and empty.
+
+Functionalities
+Donation and History Button Functionality:
+1. Clicking the "History" button will hide the donation data and display the history.
+2. Clicking the "Donation" button will hide the history and display the donation data.
+3. Donation Functionality for Each Card:
+4. When the "Donate Now" button is clicked:
+5. The donation input will be deducted from the total account balance, and the updated balance will be shown.
+6. The card’s current donation amount will increase.
+7. A meaningful notification will be added to the History section.
+
+Input Validation:
+1. Show an alert if invalid data is found and stop the transaction.
+2. Validate the donation amount:
+3. If the donation amount is greater than the account balance.
+4. If the input field contains an invalid number.
+5.If the input field is empty.
+
+History Section:
+The history section will display transaction notifications, including:
+1. Date and time of the transaction.
+2. Donation amount.
+3. Donation name.
+
+Challenges
+1. Sticky Navbar: Make the navbar sticky to the top of the page.
+2. Blog Page: Create a blog.html file and link it to the main page:
+3. The blog page should contain 4 questions and their answers:
+4. What is the Document Object Model (DOM)?
+5. How do you select an element from the DOM?
+6. What is event delegation in the context of the DOM, and why is it useful?
+7. How do you manipulate an element's attributes and styles using the DOM?
+8. Toggle Active Status: Toggle the active status of the "Donation" and "History" buttons:
+9. Change the button color to indicate when it's active.
+10. Static Modal: Display a static modal instead of an alert on a successful donation.
+11. Reusable Functions: Use at least 2 common functions.
+12. Responsive Design: Ensure the application is responsive for different screen sizes.
