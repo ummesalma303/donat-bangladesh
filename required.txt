@@ -1,11 +1,11 @@
-Key Rule
+Key Rule✅
 1. Do not ask about mark distribution in the group, as it will not be provided.
 2.Do not post assignment feedback after receiving it. If you encounter issues or have complaints, please join a support session for discussion.
 3.Avoid using "lorem ipsum" text. Use relevant and meaningful content instead.
 4.Feel free to modify the color or design, but ensure the design is visually appealing and professional.
 5.You are not allowed to use any JavaScript library or framework for this assignment.
 
-Design
+Design✅
 1.Navbar: Create a visually appealing navbar with the following structure:
 2.Logo positioned in the middle.
 3."Blog" button on the left.
@@ -24,7 +24,7 @@ Functionalities
 Donation and History Button Functionality:
 1. Clicking the "History" button will hide the donation data and display the history.
 2. Clicking the "Donation" button will hide the history and display the donation data.
-3. Donation Functionality for Each Card:
+3. Donation +-:
 4. When the "Donate Now" button is clicked:
 5. The donation input will be deducted from the total account balance, and the updated balance will be shown.
 6. The card’s current donation amount will increase.
