@@ -13,7 +13,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="sticky top-0 ">
+    <header class="sticky top-0 z-20">
         <nav class="flex text-center justify-between backdrop-blur-md bg-white/60 bg-slate-600 px-8 py-4">
             <a href="./index.html"><button id="home" class="btn bg-[#B4F461] lg:px-8 lg:text-xl font-semibold">Home</button></a>
             <div class="flex  items-center space-x-3 ">
@@ -36,9 +36,9 @@
         
     </header>
     <main>
-        <section class="container mx-auto my-7">
+        <section class="container px-7 lg:px-0 mx-auto my-7">
             <h1 class="text-4xl font-bold mb-6">Important Faq <i class="fa-regular fa-comment-dots"></i></h1>
-            <div class="">
+            <div>
                 <div class="join join-vertical w-full">
                     <div class="collapse collapse-arrow join-item border-base-300 border">
                         <input type="radio" name="my-accordion-4" checked="checked" />
@@ -50,12 +50,14 @@
                         </div>
                     </div>
                     <div class="collapse collapse-arrow join-item border-base-300 border">
-                        <input type="radio" name="my-accordion-4" />
+                        <input type="radio" name="my-accordion-4" checked="checked" />
                         <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
                         <div class="collapse-content">
-                            <p>JavaScript provides several methods to select DOM elements. Here are some of Example: <br>getElementsByTagName,getElementsByClassName,getElementsByTagName,querySelector,querySelectorAll</p>
+                            <p>JavaScript provides several methods to select DOM elements. Here are some of Example:
+                            <br>getElementsByTagName, getElementsByClassName,getElementsByTagName, querySelector, querySelectorAll</p>
                         </div>
                     </div>
+                    
                     <div class="collapse collapse-arrow join-item border-base-300 border">
                         <input type="radio" name="my-accordion-4" />
                         <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM ,and why is useful?</div>
@@ -64,12 +66,14 @@
                             instead of adding to every single element. It refers to the process of using event propagation (bubbling) to handle
                             events at a higher level in the DOM than the element on which the event originated</p>
                         </div>
-                        <div class="collapse collapse-arrow join-item border-base-300 border">
-                            <input type="radio" name="my-accordion-4" />
-                            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attribute and styles using the DOM?</div>
-                            <div class="collapse-content">
-                                <p>you manipulate an element's attribute and styles using the DOM you can use setAttribute().</p>
-                            </div>
+                      
+                    </div>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attribute and styles using the
+                            DOM?</div>
+                        <div class="collapse-content">
+                            <p>you manipulate an element's attribute and styles using the DOM you can use setAttribute().</p>
                         </div>
                     </div>
                 </div>
