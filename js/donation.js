@@ -4,14 +4,19 @@ document.getElementById('donate-btn-1')
         if (!donateInput || isNaN(donateInput) || donateInput < 0) {
         alert('Invalid Donation Input');
         return
-        } else {
-            my_modal_1.showModal()
-    }
+        }
     const donateBalance = getTextFieldValue('donate-balance');
     const totalDonate = donateInput + donateBalance;
-    const donateTotalBalance= document.getElementById('donate-balance').innerText = totalDonate;
     // decrees balance
-    const balance = getTextFieldValue('balance');
+        const balance = getTextFieldValue('balance');
+        if (balance < totalDonate) {
+            alert("You don't have enough balance");
+            return
+        } else {
+          my_modal_1.showModal()
+    }
+    const donateTotalBalance= document.getElementById('donate-balance').innerText = totalDonate;
+
     const newBalance = balance - donateInput;
      
        
@@ -38,14 +43,18 @@ document.getElementById('donate-btn-2')
         if (!donateInput || isNaN(donateInput) || donateInput < 0) {
         alert('Invalid Donation Amount');
         return
-        } else {
-            my_modal_2.showModal()
-    }
+        } 
     const donateBalance = getTextFieldValue('donate-balance-2');
     const totalDonate = donateInput + donateBalance;
-    const donateTotalBalance = document.getElementById('donate-balance-2').innerText = totalDonate;
     // decrees balance
-    const balance = getTextFieldValue('balance');
+        const balance = getTextFieldValue('balance');
+        if (balance < totalDonate) {
+            alert("You don't have enough balance");
+            return
+        } else {
+          my_modal_2.showModal()
+        }
+    const donateTotalBalance = document.getElementById('donate-balance-2').innerText = totalDonate;
     const newBalance = balance - donateInput;
     document.getElementById('balance').innerText = newBalance;
         
@@ -67,14 +76,19 @@ document.getElementById('donate-btn-3')
     if (!donateInput || isNaN(donateInput) || donateInput < 0) {
         alert('Invalid Donation Amount');
         return
-        } else {
-            my_modal_3.showModal()
-    }
+        } 
     const donateBalance = getTextFieldValue('donate-balance-3');
     const totalDonate = donateInput + donateBalance;
-    const donateTotalBalance=document.getElementById('donate-balance-3').innerText = totalDonate;
    
     const balance = getTextFieldValue('balance');
+    if (balance < totalDonate) {
+        alert("You don't have enough balance");
+        return
+    } else {
+        my_modal_3.showModal()
+    }
+    const donateTotalBalance=document.getElementById('donate-balance-3').innerText = totalDonate;
+
     const newBalance = balance - donateInput;
     document.getElementById('balance').innerText = newBalance;
 
