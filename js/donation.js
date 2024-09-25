@@ -1,3 +1,4 @@
+const historySec = document.getElementById('history-section')
 document.getElementById('donate-btn-1')
     .addEventListener('click', function () {
         const donateInput = getValidInput('donate-input');
@@ -10,17 +11,13 @@ document.getElementById('donate-btn-1')
     // decrees balance
         const balance = getTextFieldValue('balance');
         if (balance < totalDonate) {
-            alert("You don't have enough balance");
+            alert("You have not enough balance");
             return
         } else {
           my_modal_1.showModal()
     }
-    const donateTotalBalance= document.getElementById('donate-balance').innerText = totalDonate;
-
+    document.getElementById('donate-balance').innerText = totalDonate;
     const newBalance = balance - donateInput;
-     
-       
-    // document.getElementById('donate-btn-1').showModal
     document.getElementById('balance').innerText = newBalance;
 
 
@@ -29,7 +26,7 @@ document.getElementById('donate-btn-1')
     const history = document.createElement('div');
     history.classList.add('border-2', 'border-black', 'rounded-2xl', 'p-8')
         history.innerHTML = `
-    <h2 class="text-xl font-bold text-[#111111] mb-2">${donateTotalBalance} Taka is Donated for famine-2024 at ${volunteerName}</h2>
+    <h2 class="text-xl font-bold text-[#111111] mb-2">${donateInput} Taka is ${volunteerName}</h2>
     <p class="text-[#111111B3]"> ${new Date()}</p>
     `  
         document.getElementById('history-section').appendChild(history)        
@@ -49,12 +46,12 @@ document.getElementById('donate-btn-2')
     // decrees balance
         const balance = getTextFieldValue('balance');
         if (balance < totalDonate) {
-            alert("You don't have enough balance");
+            alert("You have not enough balance");
             return
         } else {
           my_modal_2.showModal()
         }
-    const donateTotalBalance = document.getElementById('donate-balance-2').innerText = totalDonate;
+    document.getElementById('donate-balance-2').innerText = totalDonate;
     const newBalance = balance - donateInput;
     document.getElementById('balance').innerText = newBalance;
         
@@ -63,7 +60,7 @@ document.getElementById('donate-btn-2')
     const history2= document.createElement('div');
     history2.classList.add('border-2', 'border-black', 'rounded-2xl', 'p-8')
         history2.innerHTML = `
-    <h2 class="text-xl font-bold text-[#111111] mb-2">${donateTotalBalance} Taka is Donated for famine-2024 at ${volunteerName2}</h2>
+    <h2 class="text-xl font-bold text-[#111111] mb-2">${donateInput} Taka is ${volunteerName2}</h2>
     <p class="text-[#111111B3]"> ${new Date()}</p>
     `  
         document.getElementById('history-section').appendChild(history2)   
@@ -82,12 +79,12 @@ document.getElementById('donate-btn-3')
    
     const balance = getTextFieldValue('balance');
     if (balance < totalDonate) {
-        alert("You don't have enough balance");
+        alert("You have not enough balance");
         return
     } else {
         my_modal_3.showModal()
     }
-    const donateTotalBalance=document.getElementById('donate-balance-3').innerText = totalDonate;
+    document.getElementById('donate-balance-3').innerText = totalDonate;
 
     const newBalance = balance - donateInput;
     document.getElementById('balance').innerText = newBalance;
@@ -97,7 +94,7 @@ document.getElementById('donate-btn-3')
     const history3= document.createElement('div');
     history3.classList.add('border-2', 'border-black', 'rounded-2xl', 'p-8')
     history3.innerHTML = `
-    <h2 class="text-xl font-bold text-[#111111] mb-2">${donateTotalBalance} Taka is Donated for famine-2024 at ${volunteerName3}</h2>
+    <h2 class="text-xl font-bold text-[#111111] mb-2">${donateInput} Taka is ${volunteerName3}</h2>
     <p class="text-[#111111B3]"> ${new Date()}</p>
     ` 
     document.getElementById('history-section').appendChild(history3)
