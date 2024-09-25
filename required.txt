@@ -22,12 +22,12 @@ Design✅
 
 Functionalities
 Donation and History Button Functionality:
-1. Clicking the "History" button will hide the donation data and display the history.
-2. Clicking the "Donation" button will hide the history and display the donation data.
-3. Donation +-:
+1. Clicking the "History" button will hide the donation data and display the history.✅
+2. Clicking the "Donation" button will hide the history and display the donation data.✅
+3. Donation +-:✅
 4. When the "Donate Now" button is clicked:
-5. The donation input will be deducted from the total account balance, and the updated balance will be shown.
-6. The card’s current donation amount will increase.
+5. The donation input will be deducted from the total account balance, and the updated balance will be shown.✅
+6. The card’s current donation amount will increase.✅
 7. A meaningful notification will be added to the History section.
 
 Input Validation:
