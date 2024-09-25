@@ -13,12 +13,9 @@ document.getElementById('donate-btn-1')
     // decrees balance
     const balance = getTextFieldValue('balance');
     const newBalance = balance - donateInput;
-    if (totalDonate > balance) {
-    document.getElementById('my_modal_2').classList.add('hidden')
-    alert('you have not enough money');
-    return
-        }
-        document.getElementById('donate-btn-1').showModal
+     
+       
+    // document.getElementById('donate-btn-1').showModal
     document.getElementById('balance').innerText = newBalance;
 
 
@@ -50,11 +47,6 @@ document.getElementById('donate-btn-2')
     // decrees balance
     const balance = getTextFieldValue('balance');
     const newBalance = balance - donateInput;
-    if (totalDonate > balance) {
-    document.getElementById('my_modal_2').classList.add('hidden')
-    alert('you have not enough money');
-    return
-    }
     document.getElementById('balance').innerText = newBalance;
         
         // card-2
@@ -84,11 +76,6 @@ document.getElementById('donate-btn-3')
    
     const balance = getTextFieldValue('balance');
     const newBalance = balance - donateInput;
-    if (totalDonate > balance) {
-    document.getElementById('my_modal_2').classList.add('hidden')
-    alert('you have not enough money');
-    return
-    }
     document.getElementById('balance').innerText = newBalance;
 
     // card-3
@@ -101,4 +88,8 @@ document.getElementById('donate-btn-3')
     ` 
     document.getElementById('history-section').appendChild(history3)
         
+})
+
+document.getElementById('blog').addEventListener('click',function () {
+    window.location.href = '/blog.html'
 })
