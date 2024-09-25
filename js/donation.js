@@ -105,5 +105,5 @@ document.getElementById('donate-btn-3')
 })
 
 document.getElementById('blog').addEventListener('click',function () {
-    window.location.href = '/blog.html'
+    window.location.href = './blog.html'
 })
